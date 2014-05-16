@@ -348,6 +348,93 @@ while a15.top<vt+192 do
           end;
 end;
 
+procedure Tmain.ahClick(Sender: TObject);
+begin
+  if access=1 then
+      while add.left>-250 do
+          begin
+          a0.left:=a0.left-4;   e0.left:=e0.left-4;   d0.left:=d0.left-4; 
+          a1.left:=a1.left-4;   e1.left:=e1.left-4;   d1.left:=d1.left-4; 
+          a2.left:=a2.left-4;   e2.left:=e2.left-4;   d2.left:=d2.left-4; 
+          a3.left:=a3.left-4;   e3.left:=e3.left-4;   d3.left:=d3.left-4; 
+          a4.left:=a4.left-4;   e4.left:=e4.left-4;   d4.left:=d4.left-4; 
+          a5.left:=a5.left-4;   e5.left:=e5.left-4;   d5.left:=d5.left-4; 
+          a6.left:=a6.left-4;   e6.left:=e6.left-4;   d6.left:=d6.left-4; 
+          a7.left:=a7.left-4;   e7.left:=e7.left-4;   d7.left:=d7.left-4; 
+          a8.left:=a8.left-4;   e8.left:=e8.left-4;   d8.left:=d8.left-4; 
+          a9.left:=a9.left-4;   e9.left:=e9.left-4;   d9.left:=d9.left-4; 
+          a10.left:=a10.left-4; e10.left:=e10.left-4; d10.left:=d10.left-4; 
+          a11.left:=a11.left-4; e11.left:=e11.left-4; d11.left:=d11.left-4; 
+          a12.left:=a12.left-4; e12.left:=e12.left-4; d12.left:=d12.left-4; 
+          a13.left:=a13.left-4; e13.left:=e13.left-4; d13.left:=d13.left-4; 
+          a14.left:=a14.left-4; e14.left:=e14.left-4; d14.left:=d14.left-4; 
+          a15.left:=a15.left-4; e15.left:=e15.left-4; d15.left:=d15.left-4; add.left:=add.left-4; Application.ProcessMessages;
+          end
+          else
+              begin
+              while a0.left<-250 do
+                  begin
+                  a0.left:=a0.left-4;
+                  a1.left:=a1.left-4;
+                  a2.left:=a2.left-4;
+                  a3.left:=a3.left-4;
+                  a4.left:=a4.left-4;
+                  a5.left:=a5.left-4;
+                  a6.left:=a6.left-4;
+                  a7.left:=a7.left-4;
+                  a8.left:=a8.left-4;
+                  a9.left:=a9.left-4;
+                  a10.left:=a10.left-4;
+                  a11.left:=a11.left-4;
+                  a12.left:=a12.left-4;
+                  a13.left:=a13.left-4;
+                  a14.left:=a14.left-4;
+                  a15.left:=a15.left-4;
+                  Application.ProcessMessages;
+                  end;
+              end;
+end;
+
+procedure Tmain.bhClick(Sender: TObject);
+begin
+  if access=1 then
+      while addb.left>-250 do
+          begin
+          b0.left:=b0.left-4;   eb0.left:=eb0.left-4;   db0.left:=db0.left-4; 
+          b1.left:=b1.left-4;   eb1.left:=eb1.left-4;   db1.left:=db1.left-4; 
+          b2.left:=b2.left-4;   eb2.left:=eb2.left-4;   db2.left:=db2.left-4; 
+          b3.left:=b3.left-4;   eb3.left:=eb3.left-4;   db3.left:=db3.left-4; 
+          b4.left:=b4.left-4;   eb4.left:=eb4.left-4;   db4.left:=db4.left-4; 
+          b5.left:=b5.left-4;   eb5.left:=eb5.left-4;   db5.left:=db5.left-4; 
+          b6.left:=b6.left-4;   eb6.left:=eb6.left-4;   db6.left:=db6.left-4; 
+          b7.left:=b7.left-4;   eb7.left:=eb7.left-4;   db7.left:=db7.left-4; 
+          b8.left:=b8.left-4;   eb8.left:=eb8.left-4;   db8.left:=db8.left-4; 
+          b9.left:=b9.left-4;   eb9.left:=eb9.left-4;   db9.left:=db9.left-4; 
+          b10.left:=b10.left-4; eb10.left:=eb10.left-4; db10.left:=db10.left-4; 
+          b11.left:=b11.left-4; eb11.left:=eb11.left-4; db11.left:=db11.left-4; 
+          b12.left:=b12.left-4; eb12.left:=eb12.left-4; db12.left:=db12.left-4; 
+          b13.left:=b13.left-4; eb13.left:=eb13.left-4; db13.left:=db13.left-4; 
+          b14.left:=b14.left-4; eb14.left:=eb14.left-4; db14.left:=db14.left-4; 
+          b15.left:=b15.left-4; eb15.left:=eb15.left-4; db15.left:=db15.left-4; addb.left:=addb.left-4; Application.ProcessMessages;
+          end
+          else
+              begin
+              while b0.left<-250 do
+                  begin
+                  b0.left:=b0.left-4;
+                  b1.left:=b1.left-4;
+                  b2.left:=b2.left-4;
+                  b3.left:=b3.left-4;
+                  b4.left:=b4.left-4;
+                  b5.left:=b5.left-4;
+                  b6.left:=b6.left-4;
+                  b7.left:=b7.left-4;
+                  b8.left:=b8.left-4;
+                  b9.left:=b9.left-4;
+                  Application.ProcessMessages;
+                  end;
+              end;
+end;
 
 procedure TForm1.a0Click(Sender: TObject);
 begin
