@@ -171,7 +171,6 @@ implementation
 {$R *.dfm}
 procedure Tmain.FormCreate(Sender: TObject);
 begin
-
   a0.left:=8;  a0.top:=-50;  a0.height:=23;  a0.width:=240;
   a1.left:=8;  a1.top:=-50;  a1.height:=23;  a1.width:=240;
   a2.left:=8;  a2.top:=-50;  a2.height:=23;  a2.width:=240;
@@ -307,7 +306,7 @@ if a7.caption<>'' then begin a7.show; e7.show; d7.show; tv:=232; end;
 if a8.caption<>'' then begin a8.show; e8.show; d8.show; tv:=264; end;
 if a9.caption<>'' then begin a9.show; e9.show; d9.show; tv:=296; end;
 if access=1 then
-while a15.top<vt+192 do
+while a15.top<tv+192 do
       begin
       if ad0.Top<8        then begin a0.Top:=a0.Top+4;   e0.Top:=e0.Top+4;   d0.Top:=ea0.top+4;   Application.ProcessMessages; end;
       if ad1.Top<40       then begin a1.Top:=a1.Top+4;   e1.Top:=e1.Top+4;   d1.Top:=ea1.top+4;   Application.ProcessMessages; end;
@@ -438,52 +437,72 @@ end;
 
 procedure TForm1.a0Click(Sender: TObject);
 begin
+ah.click;
 ac:=0;
+bs.click;
 end;
 
 procedure TForm1.a1Click(Sender: TObject);
 begin
+ah.click;
 ac:=1;
+bs.click;
 end;
 
 procedure TForm1.a2Click(Sender: TObject);
 begin
+ah.click;
 ac:=2;
+bs.click;
 end;
 
 procedure TForm1.a3Click(Sender: TObject);
 begin
+ah.click;
 ac:=3;
+bs.click;
 end;
 
 procedure TForm1.a4Click(Sender: TObject);
 begin
+ah.click;
 ac:=4;
+bs.click;
 end;
 
 procedure TForm1.a5Click(Sender: TObject);
 begin
+ah.click;
 ac:=5;
+bs.click;
 end;
 
 procedure TForm1.a6Click(Sender: TObject);
 begin
+ah.click;
 ac:=6;
+bs.click;
 end;
 
 procedure TForm1.a7Click(Sender: TObject);
 begin
+ah.click;
 ac:=7;
+bs.click;
 end;
 
 procedure TForm1.a8Click(Sender: TObject);
 begin
+ah.click;
 ac:=8;
+bs.click;
 end;
 
 procedure TForm1.a9Click(Sender: TObject);
 begin
+ah.click;
 ac:=9;
+bs.click;
 end;
 
 end.
