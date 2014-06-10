@@ -347,6 +347,73 @@ while a15.top<tv+192 do
           end;
 end;
 
+///
+procedure Tmain.asClick(Sender: TObject);
+begin
+b0.hide; eb0.hide; db0.hide;
+b1.hide; eb1.hide; db1.hide;
+b2.hide; eb2.hide; db2.hide;
+b3.hide; eb3.hide; db3.hide;
+b4.hide; eb4.hide; db4.hide;
+b5.hide; eb5.hide; db5.hide;
+b6.hide; eb6.hide; db6.hide;
+b7.hide; eb7.hide; db7.hide;
+b8.hide; eb8.hide; db8.hide;
+b9.hide; eb9.hide; db9.hide;
+addb.hide;
+
+b0.caption:=F.ReadString('B',PCar(ac)+'_0',''); eb0.text:=b0.caption;
+b1.caption:=F.ReadString('B',PCar(ac)+'_1',''); eb1.text:=b1.caption;
+b2.caption:=F.ReadString('B',PCar(ac)+'_2',''); eb2.text:=b2.caption;
+b3.caption:=F.ReadString('B',PCar(ac)+'_3',''); eb3.text:=b3.caption;
+b4.caption:=F.ReadString('B',PCar(ac)+'_4',''); eb4.text:=b4.caption;
+b5.caption:=F.ReadString('B',PCar(ac)+'_5',''); eb5.text:=b5.caption;
+b6.caption:=F.ReadString('B',PCar(ac)+'_6',''); eb6.text:=b6.caption;
+b7.caption:=F.ReadString('B',PCar(ac)+'_7',''); eb7.text:=b7.caption;
+b8.caption:=F.ReadString('B',PCar(ac)+'_8',''); eb8.text:=b8.caption;
+b9.caption:=F.ReadString('B',PCar(ac)+'_9',''); eb9.text:=b9.caption;
+
+if b0.caption<>'' then begin b0.show; eb0.show; db0.show; th:=8;   end;
+if b1.caption<>'' then begin b1.show; eb1.show; db1.show; th:=40;  end;
+if b2.caption<>'' then begin b2.show; eb2.show; db2.show; th:=72;  end;
+if b3.caption<>'' then begin b3.show; eb3.show; db3.show; th:=104; end;
+if b4.caption<>'' then begin b4.show; eb4.show; db4.show; th:=136; end;
+if b5.caption<>'' then begin b5.show; eb5.show; db5.show; th:=168; end;
+if b6.caption<>'' then begin b6.show; eb6.show; db6.show; th:=200; end;
+if b7.caption<>'' then begin b7.show; eb7.show; db7.show; th:=232; end;
+if b8.caption<>'' then begin b8.show; eb8.show; db8.show; th:=264; end;
+if b9.caption<>'' then begin b9.show; eb9.show; db9.show; th:=296; end;
+if access=1 then
+while b9.top<296 do
+      begin
+      if b0.Top<8        then begin b0.Top:=b0.Top+4;   eb0.Top:=b0.top;   db0.Top:=b0.top;   Application.ProcessMessages; end;
+      if b1.Top<40       then begin b1.Top:=b1.Top+4;   eb1.Top:=b0.top;   db1.Top:=b0.top;   Application.ProcessMessages; end;
+      if b2.Top<72       then begin b2.Top:=b2.Top+4;   eb2.Top:=b0.top;   db2.Top:=b0.top;   Application.ProcessMessages; end;
+      if b3.Top<104      then begin b3.Top:=b3.Top+4;   eb3.Top:=b0.top;   db3.Top:=b0.top;   Application.ProcessMessages; end;
+      if b4.Top<136      then begin b4.Top:=b4.Top+4;   eb4.Top:=b0.top;   db4.Top:=b0.top;   Application.ProcessMessages; end;
+      if b5.Top<168      then begin b5.Top:=b5.Top+4;   eb5.Top:=b0.top;   db5.Top:=b0.top;   Application.ProcessMessages; end;
+      if b6.Top<200      then begin b6.Top:=b6.Top+4;   eb6.Top:=b0.top;   db6.Top:=b0.top;   Application.ProcessMessages; end;
+      if b7.Top<232      then begin b7.Top:=b7.Top+4;   eb7.Top:=b0.top;   db7.Top:=b0.top;   Application.ProcessMessages; end;
+      if b8.Top<264      then begin b8.Top:=b8.Top+4;   eb8.Top:=b0.top;   db8.Top:=b0.top;   Application.ProcessMessages; end;
+      if b9.Top<296      then begin b9.Top:=b9.Top+4;   eb9.Top:=b0.top;   db9.Top:=b0.top;   Application.ProcessMessages; end;
+      if addb.top<th    then begin addb.top:=addb.top+4;                                      Application.ProcessMessages; end;
+      end else
+          begin
+          if b0.Top<8        then begin b0.Top:=b0.Top+4;      Application.ProcessMessages; end;
+          if b1.Top<40       then begin b1.Top:=b1.Top+4;      Application.ProcessMessages; end;
+          if b2.Top<72       then begin b2.Top:=b2.Top+4;      Application.ProcessMessages; end;
+          if b3.Top<104      then begin b3.Top:=b3.Top+4;      Application.ProcessMessages; end;
+          if b4.Top<136      then begin b4.Top:=b4.Top+4;      Application.ProcessMessages; end;
+          if b5.Top<168      then begin b5.Top:=b5.Top+4;      Application.ProcessMessages; end;
+          if b6.Top<200      then begin b6.Top:=b6.Top+4;      Application.ProcessMessages; end;
+          if b7.Top<232      then begin b7.Top:=b7.Top+4;      Application.ProcessMessages; end;
+          if b8.Top<264      then begin b8.Top:=b8.Top+4;      Application.ProcessMessages; end;
+          if b9.Top<296      then begin b9.Top:=b9.Top+4;      Application.ProcessMessages; end;
+          end;
+end;
+///
+
+
 procedure Tmain.ahClick(Sender: TObject);
 begin
   if access=1 then
@@ -367,7 +434,8 @@ begin
           a12.left:=a12.left-4; e12.left:=e12.left-4; d12.left:=d12.left-4; 
           a13.left:=a13.left-4; e13.left:=e13.left-4; d13.left:=d13.left-4; 
           a14.left:=a14.left-4; e14.left:=e14.left-4; d14.left:=d14.left-4; 
-          a15.left:=a15.left-4; e15.left:=e15.left-4; d15.left:=d15.left-4; add.left:=add.left-4; Application.ProcessMessages;
+          a15.left:=a15.left-4; e15.left:=e15.left-4; d15.left:=d15.left-4; 
+          add.left:=add.left-4; Application.ProcessMessages;
           end
           else
               begin
@@ -399,22 +467,23 @@ begin
   if access=1 then
       while addb.left>-250 do
           begin
-          b0.left:=b0.left-4;   eb0.left:=eb0.left-4;   db0.left:=db0.left-4; 
-          b1.left:=b1.left-4;   eb1.left:=eb1.left-4;   db1.left:=db1.left-4; 
-          b2.left:=b2.left-4;   eb2.left:=eb2.left-4;   db2.left:=db2.left-4; 
-          b3.left:=b3.left-4;   eb3.left:=eb3.left-4;   db3.left:=db3.left-4; 
-          b4.left:=b4.left-4;   eb4.left:=eb4.left-4;   db4.left:=db4.left-4; 
-          b5.left:=b5.left-4;   eb5.left:=eb5.left-4;   db5.left:=db5.left-4; 
-          b6.left:=b6.left-4;   eb6.left:=eb6.left-4;   db6.left:=db6.left-4; 
-          b7.left:=b7.left-4;   eb7.left:=eb7.left-4;   db7.left:=db7.left-4; 
-          b8.left:=b8.left-4;   eb8.left:=eb8.left-4;   db8.left:=db8.left-4; 
-          b9.left:=b9.left-4;   eb9.left:=eb9.left-4;   db9.left:=db9.left-4; 
-          b10.left:=b10.left-4; eb10.left:=eb10.left-4; db10.left:=db10.left-4; 
-          b11.left:=b11.left-4; eb11.left:=eb11.left-4; db11.left:=db11.left-4; 
-          b12.left:=b12.left-4; eb12.left:=eb12.left-4; db12.left:=db12.left-4; 
-          b13.left:=b13.left-4; eb13.left:=eb13.left-4; db13.left:=db13.left-4; 
-          b14.left:=b14.left-4; eb14.left:=eb14.left-4; db14.left:=db14.left-4; 
-          b15.left:=b15.left-4; eb15.left:=eb15.left-4; db15.left:=db15.left-4; addb.left:=addb.left-4; Application.ProcessMessages;
+          b0.left:=b0.left-4;     eb0.left:=eb0.left-4;   db0.left:=db0.left-4; 
+          b1.left:=b1.left-4;     eb1.left:=eb1.left-4;   db1.left:=db1.left-4; 
+          b2.left:=b2.left-4;     eb2.left:=eb2.left-4;   db2.left:=db2.left-4; 
+          b3.left:=b3.left-4;     eb3.left:=eb3.left-4;   db3.left:=db3.left-4; 
+          b4.left:=b4.left-4;     eb4.left:=eb4.left-4;   db4.left:=db4.left-4; 
+          b5.left:=b5.left-4;     eb5.left:=eb5.left-4;   db5.left:=db5.left-4; 
+          b6.left:=b6.left-4;     eb6.left:=eb6.left-4;   db6.left:=db6.left-4; 
+          b7.left:=b7.left-4;     eb7.left:=eb7.left-4;   db7.left:=db7.left-4; 
+          b8.left:=b8.left-4;     eb8.left:=eb8.left-4;   db8.left:=db8.left-4; 
+          b9.left:=b9.left-4;     eb9.left:=eb9.left-4;   db9.left:=db9.left-4; 
+          b10.left:=b10.left-4;   eb10.left:=eb10.left-4; db10.left:=db10.left-4; 
+          b11.left:=b11.left-4;   eb11.left:=eb11.left-4; db11.left:=db11.left-4; 
+          b12.left:=b12.left-4;   eb12.left:=eb12.left-4; db12.left:=db12.left-4; 
+          b13.left:=b13.left-4;   eb13.left:=eb13.left-4; db13.left:=db13.left-4; 
+          b14.left:=b14.left-4;   eb14.left:=eb14.left-4; db14.left:=db14.left-4; 
+          b15.left:=b15.left-4;   eb15.left:=eb15.left-4; db15.left:=db15.left-4; 
+          addb.left:=addb.left-4; Application.ProcessMessages;
           end
           else
               begin
